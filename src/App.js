@@ -5,6 +5,8 @@ import logo from "./logo.svg";
 import csvData from "./phe_cases_london_boroughs.csv";
 import "./App.css";
 
+import Map from "./components/Map";
+
 class App extends React.Component {
   constructor() {
     super();
@@ -24,6 +26,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <img src={logo} className="App-logo" alt="logo" />
+        <Map />
       </div>
     );
   }
