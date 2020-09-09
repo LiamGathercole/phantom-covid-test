@@ -4,6 +4,8 @@ import GoogleMapReact from "google-map-react";
 import MapStyle from "../assets/mapStyle";
 import LondonBoroughs from "../assets/london_boroughs";
 
+const GOOGLE_MAPS_API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+
 class Map extends React.Component {
   constructor() {
     super();
@@ -37,7 +39,7 @@ class Map extends React.Component {
         }}
       >
         <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyBICitC0sYT0AFEMy-0bwwRpCVWB-KkB8w" }}
+          bootstrapURLKeys={{ key: GOOGLE_MAPS_API_KEY }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
           options={{ styles: MapStyle.styles, fullscreenControl: false }}
