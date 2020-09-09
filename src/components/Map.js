@@ -2,6 +2,7 @@ import React from "react";
 import GoogleMapReact from "google-map-react";
 
 import MapStyle from "../assets/mapStyle";
+import LondonBoroughs from "../assets/london_boroughs";
 
 class Map extends React.Component {
   constructor() {
@@ -16,10 +17,11 @@ class Map extends React.Component {
     zoom: 10,
   };
 
-  componentDidMount() {}
+  componentDidMount() { }
 
   handleApiLoaded(map) {
     console.log(map);
+    map.data.addGeoJson(LondonBoroughs);
   }
 
   render() {
