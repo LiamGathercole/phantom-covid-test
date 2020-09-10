@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/phantom-covid-test/static/css/main.d38bd98e.chunk.css",
+    "main.js": "/phantom-covid-test/static/js/main.28401f80.chunk.js",
+    "main.js.map": "/phantom-covid-test/static/js/main.28401f80.chunk.js.map",
+    "runtime-main.js": "/phantom-covid-test/static/js/runtime-main.09bce3e9.js",
+    "runtime-main.js.map": "/phantom-covid-test/static/js/runtime-main.09bce3e9.js.map",
+    "static/js/2.acc8b786.chunk.js": "/phantom-covid-test/static/js/2.acc8b786.chunk.js",
+    "static/js/2.acc8b786.chunk.js.map": "/phantom-covid-test/static/js/2.acc8b786.chunk.js.map",
+    "index.html": "/phantom-covid-test/index.html",
+    "precache-manifest.b3627efcd62dc3419f45f1f5842b6841.js": "/phantom-covid-test/precache-manifest.b3627efcd62dc3419f45f1f5842b6841.js",
+    "service-worker.js": "/phantom-covid-test/service-worker.js",
+    "static/css/main.d38bd98e.chunk.css.map": "/phantom-covid-test/static/css/main.d38bd98e.chunk.css.map",
+    "static/js/2.acc8b786.chunk.js.LICENSE.txt": "/phantom-covid-test/static/js/2.acc8b786.chunk.js.LICENSE.txt",
+    "static/media/covid-logo.png": "/phantom-covid-test/static/media/covid-logo.ab535536.png",
+    "static/media/phe_cases_london_boroughs.csv": "/phantom-covid-test/static/media/phe_cases_london_boroughs.368a4796.csv"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09bce3e9.js",
+    "static/js/2.acc8b786.chunk.js",
+    "static/css/main.d38bd98e.chunk.css",
+    "static/js/main.28401f80.chunk.js"
+  ]
+}
