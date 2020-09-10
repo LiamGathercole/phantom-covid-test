@@ -1,68 +1,61 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# COVID-19 London Heatmap
 
-## Available Scripts
+#### PHANTOM Code Test - Liam Gathercole
 
-In the project directory, you can run:
+The COVID-19 London Heatmap visualises CSV data from Jan 30 to Jun 06. Animating through the days, it is possible to visualise the way the virus moved through the city during this period.
 
-### `npm start`
+As a user, you can also use the circular slider to scrub back and forth and view the animation at your own pace, or drill down to a particular day.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Usage
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Getting started
 
-### `npm test`
+First, clone the repository to your local computer.
+Open your favourite Terminal and run these commands.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Install dependencies:
 
-### `npm run build`
+```sh
+$ npm install
+```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Create a file named `.env` and place this in the root.
+The contents of the file should be as follows:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```json
+(REACT_APP_GOOGLE_MAPS_API_KEY = XXXXXXXXXXXXXXXX)
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Replace XXXXXXXXXXXXXXXX with a Google Maps Javascript API key.
+[You can obtain an API key for free here](https://developers.google.com/maps/documentation/embed/get-api-key)
 
-### `npm run eject`
+#### Running locally
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Run local server:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+$ npm run start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Building for source
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+For production release:
 
-## Learn More
+```sh
+$ npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Todos
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+If I had more time, I would add:
 
-### Code Splitting
+- Clickable boroughs with additional metrics and charts
+- Connect to Covid API for realtime data
+- Show London and Borough totals
+- Play / Pause button for animation
+- Write tests
+- Cross browser / device testing
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## License
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+MIT

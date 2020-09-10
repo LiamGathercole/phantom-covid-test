@@ -20,12 +20,8 @@ class Map extends React.Component {
       lat: 51.506811,
       lng: -0.117133
     },
-    zoom: 10
+    zoom: 11
   };
-
-  componentDidMount() {
-    //console.log(GOOGLE_MAPS_API_KEY);
-  }
 
   componentDidUpdate() {
     let currentDay = this.props.currentDate;
@@ -61,9 +57,17 @@ class Map extends React.Component {
   }
 
   handleApiLoaded(map) {
-    console.log(map);
     map.data.addGeoJson(LondonBoroughs);
     this.setState({ map });
+
+    map.data.addListener("mouseover", event => {
+      map.data.revertStyle();
+      map.data.overrideStyle(event.feature, { strokeWeight: 5 });
+    });
+
+    map.data.addListener("mouseout", event => {
+      map.data.revertStyle();
+    });
   }
 
   render() {
