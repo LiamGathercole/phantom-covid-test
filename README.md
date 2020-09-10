@@ -23,7 +23,7 @@ Create a file named `.env` and place this in the root.
 The contents of the file should be as follows:
 
 ```json
-(REACT_APP_GOOGLE_MAPS_API_KEY = XXXXXXXXXXXXXXXX)
+REACT_APP_GOOGLE_MAPS_API_KEY = XXXXXXXXXXXXXXXX
 ```
 
 Replace XXXXXXXXXXXXXXXX with a Google Maps Javascript API key.
