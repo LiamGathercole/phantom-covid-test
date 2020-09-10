@@ -1,0 +1,17 @@
+.month {
+  font-size: 20px;
+  text-align: center;
+  width: 70px;
+  position: absolute;
+  bottom: 52px;
+  left: 64px;
+}
+
+.day {
+  font-size: 50px;
+  text-align: center;
+  width: 70px;
+  position: absolute;
+  bottom: 52px;
+  left: 64px;
+}
