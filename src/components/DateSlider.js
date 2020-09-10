@@ -1,6 +1,8 @@
 import React from "react";
 import { CircleSlider } from "react-circle-slider";
 
+import DateText from "./DateText";
+
 import "./DateSlider.css";
 
 class DateSlider extends React.Component {
@@ -19,8 +21,12 @@ class DateSlider extends React.Component {
     const value = this.state.currentDate;
     return (
       <div className="date-slider">
-        <CircleSlider value={value} onChange={this.changeDate} />
-        {this.props.dates[value]}
+        <CircleSlider
+          value={value}
+          onChange={this.changeDate}
+          max={this.props.dates.length - 2}
+        />
+        <DateText currentDate={this.props.dates[value]} />
       </div>
     );
   }

@@ -1,7 +1,7 @@
 import React from "react";
 import { readRemoteFile } from "react-papaparse";
 
-import logo from "./logo.svg";
+import logo from "./covid-logo.png";
 import csvData from "./phe_cases_london_boroughs.csv";
 import "./App.css";
 
